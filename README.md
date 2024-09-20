@@ -44,4 +44,4 @@ Contributions, issues, and feature requests are welcome. Feel free to check [iss
 ## License
 This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). This means that if you modify and use this software, you must distribute the source code of your modifications when you distribute the software. Additionally, if you run a modified version of this software as a web service, you must make the source code available to users of that service.
 
-For more details, please see the [COPYING](COPYING) file in this repository or visit [https://www.gnu.org/licenses/agpl-3.0.en.html](https://www.gnu.org/licenses/agpl-3.0.en.html).
+For more details, please see the [LICENSE](LICENSE) file in this repository or visit [https://www.gnu.org/licenses/agpl-3.0.en.html](https://www.gnu.org/licenses/agpl-3.0.en.html).
