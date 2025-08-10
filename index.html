@@ -1,62 +1,34 @@
+
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Enlaces oficiales de proyectos de Mauricio">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <title>Mauricio</title>
-    <link rel="stylesheet" href="styles.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>free4fun Link Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Share Tech Mono', monospace;
+      }
+      h1, h2, h3, h4, h5, h6, .font-orbitron {
+        font-family: 'Orbitron', sans-serif;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+  }
+}
+</script>
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="banner">
-                <img src="banner.webp" alt="Banner" class="banner-image" width="680" height="200" loading="lazy">
-            </div>
-            <img src="profile.webp" alt="Profile" class="profile-image" width="96" height="96" loading="lazy">
-            <h1 class="title">Social Networks</h1>
-            <p class="bio">These are my social networks. You can contact me through them for inquiries, collaborations, or simply to connect.</p>
-        </header>
-        <main>
-            <footer>
-                <nav aria-label="Social Networks">
-                    <ul class="social-links">
-                        <li><a href="https://www.facebook.com/fr334fun" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.instagram.com/fr334fun" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://www.youtube.com/@fr334fun" target="_blank" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="https://x.com/fr334fun" target="_blank" class="social-icon" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a></li>
-                        <li><a href="https://mastodon.uy/@free4fun" target="_blank" class="social-icon" aria-label="Mastodon"><i class="fab fa-mastodon"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/free4fun/" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li><a href="https://github.com/free4fun" target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://www.chess.com/member/fr334fun" target="_blank" class="social-icon" aria-label="Chess.com"><i class="fas fa-chess-knight"></i></a></li>
-                        <li><a href="https://discordapp.com/users/free4fun" target="_blank" class="social-icon" aria-label="Discord"><i class="fab fa-discord"></i></a></li>
-                        <li><a href="https://t.me/fr334fun" target="_blank" class="social-icon" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a></li>
-                        <li><a href="https://www.free4fun.dev" target="_blank" class="social-icon" aria-label="Sitio web"><i class="fas fa-globe"></i></a></li>
-                    </ul>
-                </nav>
-            </footer>
-            <header>
-                <h1 class="title">Featured Projects</h1>
-                <p class="bio">Each click opens up a world of possibilities. Are you ready for your next opportunity?</p>
-            </header>
-            <nav aria-label="Enlaces principales">
-                <ul class="link-list">
-                    <li><a href="https://www.tenerexito.com/" target="_blank" class="link-button" data-category="self improvment">Tener Éxito</a></li>
-                    <li><a href="https://www.espacioenarmonia.com/" target="_blank" class="link-button" data-category="healing">Espacio en Armonía</a></li>
-                </ul>
-            </nav>
-        </main>
-        <br/>
-        <p class="copyright">© 2025 Mauricio Sosa Giri. All rights reserved.</p>
-    </div>
-    <script src="script.js" defer></script>
-</body>
+  <body class="bg-black">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>

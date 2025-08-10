@@ -1,47 +1,58 @@
-# Personal Link Site
+# Cyberpunk Link Hub
 
-## Overview
-This repository contains the code for a modern, responsive personal links website. The site is designed to showcase projects, social media links, and personal information in an elegant and user-friendly manner.
+A futuristic, cyberpunk-themed personal links page. This project reimagines a standard links page with a high-tech, neon-drenched aesthetic.
 
 ## Features
-- Responsive design that works on desktop and mobile devices
-- Animated elements for enhanced user experience
-- Lazy loading of images for improved performance
-- Click tracking for analytics (console logging, can be extended to real analytics service)
-- Social media integration
-- Project showcase section
-- Cookie preferences functionality (basic implementation)
 
-## Technologies Used
-- HTML5
-- CSS3 (with custom properties for easy theming)
-- JavaScript (ES6+)
-- Intersection Observer API for lazy loading
+*   **Profile Card**: Displays your name and a catchy title with a glowing effect.
+*   **Social Links**: A collection of stylized buttons linking to your social media profiles with cool hover effects.
+*   **Project Showcase**: Dedicated section to highlight your projects with descriptions and direct links.
+*   **Responsive Design**: Adapts to different screen sizes for optimal viewing on any device.
+*   **Cyberpunk Aesthetic**: Incorporates neon glows, grid backgrounds, and a dark, futuristic color scheme to evoke a cyberpunk feel.
 
-## Setup
-1. Clone the repository:
-   ```
-   git clone https://github.com/free4fun/links-webpage.git
-   ```
-2. Navigate to the project directory:
-   ```
-   cd links-webpage
-   ```
-3. Open `index.html` in your preferred web browser.
+## Run Locally
 
-## Customization
-- Update the `index.html` file with your personal information, projects, and social media links.
-- Modify the styles in `styles.css` to match your personal brand.
-- Extend the JavaScript functionality in `script.js` as needed.
+To get this project up and running on your local machine, follow these steps:
 
-## Future Enhancements
-- Implement a full-fledged cookie consent system
-- FIXME
+### Prerequisites
 
-## Contributing
-Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/free4fun/links-webpage/issues) if you want to contribute.
+Make sure you have [Node.js](https://nodejs.org/) installed on your system.
 
-## License
-This project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0). This means that if you modify and use this software, you must distribute the source code of your modifications when you distribute the software. Additionally, if you run a modified version of this software as a web service, you must make the source code available to users of that service.
+### Installation
 
-For more details, please see the [LICENSE](LICENSE) file in this repository or visit [https://www.gnu.org/licenses/agpl-3.0.en.html](https://www.gnu.org/licenses/agpl-3.0.en.html).
+1.  Clone the repository to your local machine:
+    ```bash
+    git clone https://github.com/free4fun/cyberpunk-link-hub
+    cd cyberpunk-link-hub
+    ```
+2.  Install the project dependencies:
+    ```bash
+    npm install
+    ```
+
+### Running the App
+
+To start the development server, run:
+
+```bash
+npm run dev
+```
+
+* Note: This will typically open the application in your browser at http://localhost:5173/ (or another port if 5173 is in use).
+
+
+## Project Structure
+
+```
+.
+├── public/                 # Static assets like images
+├── src/
+│   ├── components/         # Reusable React components
+│   ├── types.ts            # TypeScript type definitions
+│   └── App.tsx             # Main application component
+├── .gitignore              # Specifies intentionally untracked files to ignore
+├── index.html              # Main HTML file
+├── package.json            # Project dependencies and scripts
+├── vite.config.ts          # Vite configuration
+└── README.md               # Project README file
+```
