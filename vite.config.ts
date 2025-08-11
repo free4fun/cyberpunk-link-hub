@@ -5,7 +5,6 @@ export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
       define: {
-        'process.env': env,
       },
       resolve: {
         alias: {
