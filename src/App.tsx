@@ -51,7 +51,9 @@ const App: React.FC = () => {
 
       
       <header className="relative w-full h-40 sm:h-56">
-        <img 
+        <img
+          loading="lazy"
+          decoding="async" 
           src="/images/banner.webp" 
           alt="Cyberpunk city street banner" 
           className="w-full h-full object-cover brightness-[0.6] saturate-150"
