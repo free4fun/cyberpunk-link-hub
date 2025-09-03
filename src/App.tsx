@@ -65,12 +65,11 @@ const App: React.FC = () => {
         <div className="w-full max-w-lg mx-auto">
           <ProfileCard
             imageUrl="/images/profile.webp"
-            name="Mauricio Sosa Giri"
-            title="free4fun"
+            name="free4fun"
           />
 
           <p className="text-center text-slate-400 max-w-md mx-auto my-6 leading-relaxed">
-            These are my social networks. You can contact me through them for inquiries, collaborations, or simply to connect.
+            Eternal rover of data finding signal in noise and art in the glitch.
           </p>
 
           <div className="flex w-full flex-col items-center space-y-4">
