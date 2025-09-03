@@ -16,7 +16,7 @@ const links: Link[] = [
   { id: 'twitter', url: 'https://x.com/fr334fun', text: 'Twitter/X', icon: <FaTwitter /> },
   { id: 'farcaster', url: 'https://farcaster.xyz/free4fun', text: 'Farcaster', icon: <SiFarcaster /> },
   { id: 'discord', url: 'https://discordapp.com/users/free4fun', text: 'Discord', icon: <FaDiscord /> },
-  { id: 'mastodon', url: 'https://mastodon.uy/@free4fun', text: 'Mastodon', icon: <FaMastodon /> },
+  { id: 'mastodon', url: 'https://mastodon.social/@fr334fun', text: 'Mastodon', icon: <FaMastodon /> },
   { id: 'chess', url: 'https://www.chess.com/member/fr334fun', text: 'Chess', icon: <FaChess /> },
   { id: 'youtube', url: 'https://www.youtube.com/@fr334fun', text: 'YouTube', icon: <FaYoutube /> },
   { id: 'instagram', url: 'https://www.instagram.com/fr334fun', text: 'Instagram', icon: <FaInstagram /> },
