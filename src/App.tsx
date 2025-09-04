@@ -1,4 +1,6 @@
-import React from 'react';
+import * as React from 'react';
+import { useEffect } from 'react';
+import { gtmPush } from './lib/gtm';
 import type { Link } from './types';
 import ProfileCard from './components/ProfileCard';
 import LinkButton from './components/LinkButton';
@@ -38,6 +40,9 @@ const projects: ProjectLink[] = [
 
 
 const App: React.FC = () => {
+  useEffect(() => {
+    gtmPush({ event: 'page_view', page_path: location.pathname + location.hash, page_title: document.title });
+  }, []);
   return (
     <div className="relative min-h-screen w-full bg-slate-950 text-slate-300">
       {/* Background Effects */}
