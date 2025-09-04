@@ -4,13 +4,12 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig(({ mode }) => {
-    const env = loadEnv(mode, '.', '');
     return {
       define: {
       },
       resolve: {
         alias: {
-          '@': path.resolve(__dirname, './src'),
+          '@': path.resolve(__dirname, '.'),
         }
       },
       plugins: [react(), tailwindcss()],

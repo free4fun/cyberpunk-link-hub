@@ -52,54 +52,26 @@ const App: React.FC = () => {
         linear-gradient(90deg, rgba(200, 200, 255, 0.05) 1px, transparent 1px)
       `, backgroundSize: '20px 20px' }}></div>
       <div className="absolute inset-0 z-0 h-full w-full bg-transparent bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:36px_36px]"></div>
-
-
-      
       <header className="relative w-full h-40 sm:h-56">
-        <img
-          loading="lazy"
-          decoding="async" 
-          src="/images/banner.webp" 
-          alt="Cyberpunk city street banner" 
-          className="w-full h-full object-cover brightness-[0.6] saturate-150"
-        />
+        <img loading="lazy" decoding="async" src="/images/banner.webp" alt="Cyberpunk city street banner" className="w-full h-full object-cover brightness-[0.6] saturate-150"/>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent"></div>
       </header>
-
-      <main className="relative z-10 flex flex-col items-center px-4 -mt-20 sm:-mt-24">
+      <main className="relative z-10 flex flex-col items-center px-2 -mt-20 sm:-mt-24">
         <div className="w-full max-w-lg mx-auto">
-          <ProfileCard
-            imageUrl="/images/profile.webp"
-            name="free4fun"
-          />
-
-          <p className="text-center text-slate-400 max-w-md mx-auto my-6 leading-relaxed">
-            Eternal rover of data finding signal in noise and art in the glitch.
-          </p>
-
-          <div className="flex w-full flex-col items-center space-y-4">
+          <ProfileCard imageUrl="/images/profile.webp" name="free4fun"/>
+          <p className="text-center text-md font-txt tracking-wider text-white max-w-lg mx-auto my-6 leading-relaxed">Eternal rover of data finding signal in noise and art in the glitch.</p>
+          <div className="flex w-full flex-col items-center">
             {links.map((link) => (
-              <LinkButton
-                key={link.id}
-                href={link.url}
-                text={link.text}
-                icon={link.icon}
-              />
+              <LinkButton key={link.id} href={link.url} text={link.text} icon={link.icon}/>
             ))}
           </div>
-
           <div className="mt-12 w-full">
-            <h2 className="text-2xl font-orbitron font-bold text-center text-cyan-300 text-glow-cyan mb-6">
+            <h2 className="text-2xl font-title font-bold tracking-widest text-center text-cyber-primary mb-6">
               Projects
             </h2>
             <div className="flex flex-col space-y-4">
                 {projects.map((project) => (
-                    <ProjectCard
-                        key={project.id}
-                        href={project.url}
-                        title={project.title}
-                        description={project.description}
-                    />
+                    <ProjectCard key={project.id} href={project.url} title={project.title} description={project.description}/>
                 ))}
             </div>
           </div>
@@ -107,7 +79,7 @@ const App: React.FC = () => {
         </div>
       </main>
 
-      <footer className="text-center p-6 mt-8 text-slate-600 text-sm font-mono">
+      <footer className="text-center p-6 mt-8 text-slate-600 text-sm font-title tracking-widest">
         <p>&copy; {new Date().getFullYear()} // System Online</p>
       </footer>
       <style>{`
